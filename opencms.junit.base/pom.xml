@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.componio</groupId>
     <artifactId>opencms.junit.base</artifactId>
-    <version>0.9.0</version>
+    <version>0.9.0_95x</version>
     <packaging>jar</packaging>
     
     <name>opencms.junit.base</name>
