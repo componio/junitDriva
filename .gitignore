@@ -41,3 +41,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+opencms.junit.base/target/classes*
+opencms.junit.base/target/classes/net/componio/opencms/junit/base/I_CmsLogHandler.class
+opencms.junit.base/target/classes/net/componio/opencms/junit/base/OpenCmsTestLogAppender.class
