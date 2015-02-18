@@ -53,8 +53,6 @@ import java.util.List;
 import java.util.Map;
 import junit.framework.TestCase;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.logging.LogFactory;
-import org.opencms.main.CmsLog;
 
 /**
  * Extends the JUnit standard with methods to handle an OpenCms database test
