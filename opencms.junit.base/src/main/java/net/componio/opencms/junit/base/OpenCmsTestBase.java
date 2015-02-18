@@ -170,7 +170,6 @@ public class OpenCmsTestBase {
      * @param initialize indicates if the configuration will be initialized
      */
     public OpenCmsTestBase(boolean initialize) throws IOException {
-        CmsLog.INIT = LogFactory.getLog("org.opencms.init");
         if (initialize) {
             OpenCmsTestLogAppender.setBreakOnError(false);
             if (m_resourceStorages == null) {

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.componio</groupId>
     <artifactId>opencms.junit.base</artifactId>
-    <version>0.9.0_95x</version>
+    <version>0.9.0_90x</version>
     <packaging>jar</packaging>
     
     <name>opencms.junit.base</name>
@@ -21,12 +21,12 @@
         <dependency>
             <groupId>org.opencms</groupId>
             <artifactId>opencms-core</artifactId>
-            <version>9.5.0</version>
+            <version>9.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.opencms</groupId>
             <artifactId>opencms-setup</artifactId>
-            <version>9.5.0</version>
+            <version>9.0.1</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
