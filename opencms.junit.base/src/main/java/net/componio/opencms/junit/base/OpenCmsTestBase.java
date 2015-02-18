@@ -53,6 +53,8 @@ import java.util.List;
 import java.util.Map;
 import junit.framework.TestCase;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.logging.LogFactory;
+import org.opencms.main.CmsLog;
 
 /**
  * Extends the JUnit standard with methods to handle an OpenCms database test
@@ -160,7 +162,7 @@ public class OpenCmsTestBase {
      * The current resource storage.
      */
     public OpenCmsTestResourceStorage m_currentResourceStrorage;
-
+    
     /**
      * JUnit constructor.<p>
      *
@@ -168,7 +170,7 @@ public class OpenCmsTestBase {
      * @param initialize indicates if the configuration will be initialized
      */
     public OpenCmsTestBase(boolean initialize) throws IOException {
-
+        CmsLog.INIT = LogFactory.getLog("org.opencms.init");
         if (initialize) {
             OpenCmsTestLogAppender.setBreakOnError(false);
             if (m_resourceStorages == null) {
