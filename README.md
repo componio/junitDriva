@@ -10,7 +10,8 @@ How to
 * MySQL
 
 ### Installation ###
-* Download the required library from [lib-repo]
+* Add the [opencms-core](https://mvnrepository.com/artifact/org.opencms/opencms-core), [opencms-setup](https://mvnrepository.com/artifact/org.opencms/opencms-setup) and other relevant libraries to your project(classpath)
+* Download the required junitDriva library from [lib-repo]
 (https://github.com/tpinkowski/junitDriva/tree/master/lib-repo/net/componio/opencms.junit.base/ "lib-repo") and add it to your project according to your OpenCms version<br/>
 **Note: lib-repo is a Maven Repository and can also be added as a dependency into you project**
 * Download one of the supported [OpenCms Versions] (http://www.opencms.org/en/download/archive.html)
