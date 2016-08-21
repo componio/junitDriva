@@ -21,14 +21,14 @@ How to
 * Copy the [initial-scripts] (https://github.com/tpinkowski/junitDriva/tree/master/initial_scripts) folder from junitDriva to a folder  of your choise
 * Copy the [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) to your project folder
 * Edit the properties in [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) like this<br/>
-``
+```
     db.product=mysql
     test.data.path=[parent-folder]
     test.webapp.path=[parent-folder]
     test.build.folder=[folder of your choise]
     test.config.path=[parent-folder]/WEB-INF/config
     test.cmsshell.scripts.path=[initial-scripts-folder]
-``
+```
 * Edit/Add the relevant properties in **[parent-folder]/WEB-INF/config/opencms.properties**
 ```
 # Database setup (used only in tests) 
