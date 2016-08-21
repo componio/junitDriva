@@ -10,7 +10,7 @@ How to
 
 ### Installation ###
 1. Download the required library and add it to your project according to your OpenCms version from [here]
-(https://github.com/tpinkowski/junitDriva/tree/master/lib-repo/net/componio/opencms.junit.base/ "lib-repo")
+(https://github.com/tpinkowski/junitDriva/tree/master/lib-repo/net/componio/opencms.junit.base/ "lib-repo")__
 **Note: lib-repo is a Maven Repository and can also be added as a dependency**
 
 
