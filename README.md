@@ -19,14 +19,14 @@ How to
 **Note: This folder is now the relevant parent-folder for the OpenCms test environment**<br/>
 * Keep only following subfolders in the **parent-folder** (setup, WEB-INF, update).<br/>
 **Only these folders are relevant in this case.**<br/>
-* Copy the [initial_scripts] (https://github.com/tpinkowski/junitDriva/tree/master/initial_scripts) folder from junitDriva to a folder  of your choise
+* Copy the [initial_scripts] (https://github.com/tpinkowski/junitDriva/tree/master/initial_scripts) folder from junitDriva to a folder  of your choice
 * Copy the [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) to your project folder
 * Edit the properties in [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) like this<br/>
 ```PROPERTIES
 db.product=mysql
 test.data.path=[parent-folder]
 test.webapp.path=[parent-folder]
-test.build.folder=[folder of your choise]
+test.build.folder=[folder of your choice]
 test.config.path=[parent-folder]/WEB-INF/config
 test.cmsshell.scripts.path=[initial-scripts-folder]
 ```
