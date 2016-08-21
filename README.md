@@ -64,10 +64,6 @@ import org.junit.Test;
 import org.opencms.file.CmsObject;
 import org.opencms.main.CmsException;
  
-/**
- *
- * @author Thomas
- */
 public class ModuleTest {
     
     public static OpenCmsTestBase cmsTestBase;
