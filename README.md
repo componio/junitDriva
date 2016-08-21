@@ -53,8 +53,45 @@ db.pool.default.user=[user]
 # password to connect to the database
 db.pool.default.password=[password]
 ```
+* Create a JUNIT class in your project. e.g. like this <br/>
+```Java
+import java.io.IOException;
+import net.componio.opencms.junit.base.OpenCmsTestBase;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.opencms.file.CmsObject;
+import org.opencms.main.CmsException;
+ 
+/**
+ *
+ * @author Thomas
+ */
+public class ModuleTest {
+    
+    public static OpenCmsTestBase cmsTestBase;
+ 
+    @BeforeClass
+    public static void initialize() throws IOException {
+        cmsTestBase = new OpenCmsTestBase(true);
+        OpenCmsTestBase.setupOpenCms("", "", true);
+    }
+ 
+    @Test
+    public void testSomething() throws CmsException {
+        CmsObject cms = cmsTestBase.getCmsObject();
+        Assert.assertNotEquals("Do Some Stuff With the CmsObject","Do Some Stuff With the CmsObject", "Hello World");
+    }
+    
+    @AfterClass
+    public static void removeOpenCms() throws IOException {
+        OpenCmsTestBase.removeOpenCms();
+    }
+}
+```
 
 Other repositories
-_______
+=======
 * [nbDriva] (https://github.com/componio/nbDriva)
 * [shellDriva] (https://github.com/tpinkowski/shellDriva)
