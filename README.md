@@ -10,17 +10,17 @@ How to
 * MySQL
 
 ### Installation ###
-1. Download the required library from [lib-repo]
+* Download the required library from [lib-repo]
 (https://github.com/tpinkowski/junitDriva/tree/master/lib-repo/net/componio/opencms.junit.base/ "lib-repo") and add it to your project according to your OpenCms version<br/>
 **Note: lib-repo is a Maven Repository and can also be added as a dependency into you project**
-2. Download one of the supported [OpenCms Versions] (http://www.opencms.org/en/download/archive.html)
-3. Unzip the downloaded package to a folder of your choice<br/>
+* Download one of the supported [OpenCms Versions] (http://www.opencms.org/en/download/archive.html)
+* Unzip the downloaded package to a folder of your choice<br/>
 **Note: This folder is now the relevant parent-folder for the OpenCms test environment**<br/>
-4. Keep only following subfolders in the **parent-folder** (setup, WEB-INF, update).<br/>
+* Keep only following subfolders in the **parent-folder** (setup, WEB-INF, update).<br/>
 **Only these folders are relevant in this case.**<br/>
-5. Copy the [initial-scripts] (https://github.com/tpinkowski/junitDriva/tree/master/initial_scripts) folder from junitDriva to a folder  of your choise
-6. Copy the [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) to your project folder
-7. Edit the properties in [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) like this<br/>
+* Copy the [initial-scripts] (https://github.com/tpinkowski/junitDriva/tree/master/initial_scripts) folder from junitDriva to a folder  of your choise
+* Copy the [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) to your project folder
+* Edit the properties in [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) like this<br/>
 ``
     db.product=mysql
     test.data.path=[parent-folder]
@@ -29,8 +29,8 @@ How to
     test.config.path=[parent-folder]/WEB-INF/config
     test.cmsshell.scripts.path=[initial-scripts-folder]
 ``
-8. Edit/Add the relevant properties in **[parent-folder]/WEB-INF/config/opencms.properties**
-``
+* Edit/Add the relevant properties in **[parent-folder]/WEB-INF/config/opencms.properties**
+```
 # Database setup (used only in tests) 
 #################################################################################
 db.pool.setup.dbName=[test-schema-name]
@@ -52,7 +52,7 @@ db.pool.default.jdbcUrl=jdbc:mysql://localhost:3306/[test-schema-name]
 db.pool.default.user=[user]
 # password to connect to the database
 db.pool.default.password=[password]
-``
+```
 
 Other repositories
 _______
