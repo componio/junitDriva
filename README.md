@@ -23,12 +23,10 @@ How to
 7. Edit the properties in [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) like this<br/>
 
     db.product=mysql
-    # Set the path to the test resources files
     test.data.path=[parent-folder]
     test.webapp.path=[parent-folder]
     test.build.folder=[folder of your choise]
     test.config.path=[parent-folder]/WEB-INF/config
-    # path to the initial cms-shell scripts to setup an test environment
     test.cmsshell.scripts.path=[initial-scripts-folder]
 
 Other repositories
