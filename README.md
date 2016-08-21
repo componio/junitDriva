@@ -1,9 +1,10 @@
 junitDriva
 =======
+A helper utility, which provides a simple way to test OpenCms Modules.
+Therefore the CmsShell is utilized to setup an OpenCms test environment and to have access to a CmsObject and other functionalities of the OpenCms API.
 
-A JUNIT Base Package to test OpenCms Modules
 
-Check out the other repositories (source code for the shell extension)
+Other repositories
+=======
 https://github.com/componio/nbDriva 
-and
 https://github.com/tpinky/shellDriva
