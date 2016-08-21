@@ -29,6 +29,30 @@ How to
     test.config.path=[parent-folder]/WEB-INF/config
     test.cmsshell.scripts.path=[initial-scripts-folder]
 ```
+8. Edit/Add the relevant properties in **[parent-folder]/WEB-INF/config/opencms.properties**
+```
+# Database setup (used only in tests) 
+#################################################################################
+db.pool.setup.dbName=[test-schema-name]
+db.pool.setup.jdbcDriver=org.gjt.mm.mysql.Driver
+db.pool.setup.jdbcUrl=jdbc:mysql://localhost:3306/
+db.pool.setup.jdbcUrl.params=?characterEncoding\=UTF-8
+db.pool.setup.user=[user]
+db.pool.setup.password=[password]
+#
+# Configuration of the default database pool
+#################################################################################
+# name of the database (used only in tests)
+db.pool.default.dbName=[test-schema-name]
+# name of the JDBC driver
+db.pool.default.jdbcDriver=org.gjt.mm.mysql.Driver
+# URL of the JDBC driver
+db.pool.default.jdbcUrl=jdbc:mysql://localhost:3306/[test-schema-name]
+# user name to connect to the database
+db.pool.default.user=[user]
+# password to connect to the database
+db.pool.default.password=[password]
+```
 
 Other repositories
 _______
