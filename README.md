@@ -17,7 +17,7 @@ How to
 3. Unzip the downloaded package to a folder of your choice<br/>
 **Note: This folder is now the relevant parent-folder for the OpenCms test environment**<br/>
 4. Keep only following subfolders in the **parent-folder** (setup, WEB-INF, update).<br/>
-**Only these folders are relevant in this case. **<br/>
+**Only these folders are relevant in this case.**<br/>
 5. Copy the [initial-scripts] (https://github.com/tpinkowski/junitDriva/tree/master/initial_scripts) folder from junitDriva to a folder  of your choise
 6. Copy the [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) to your project folder
 7. Edit the properties in [test.properties] (https://github.com/tpinkowski/junitDriva/blob/master/test.properties) like this<br/>
